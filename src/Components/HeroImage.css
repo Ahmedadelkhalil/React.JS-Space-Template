@@ -1,0 +1,36 @@
+.hero-img {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hero-img::before {
+  content: "";
+  position: absolute;
+  background: url(../Assets/heroImg.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-img .heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-img h1 {
+  font-size: 2.4rem;
+}
+.hero-img p {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 640px) {
+  .hero-img h1 {
+    font-size: 2rem;
+  }
+}
