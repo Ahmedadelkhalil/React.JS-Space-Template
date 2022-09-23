@@ -8,7 +8,7 @@ import Contact from "./Routes/Contact";
 function App() {
   return (
     <>
-      <Routes>
+      <Routes basename="/React.JS-Space-Template">
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/training" element={<Training />} />
